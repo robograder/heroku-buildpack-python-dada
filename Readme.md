@@ -1,8 +1,9 @@
-Heroku buildpack: Python
+Heroku buildpack: Python (+ Dada)
 ========================
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps, powered by [pip](http://www.pip-installer.org/).
 
+This fork of it adds an additional step that will install [dada](git@github.com:robograder/dada.git)
 
 Usage
 -----
@@ -12,7 +13,7 @@ Example usage:
     $ ls
     Procfile  requirements.txt  web.py
 
-    $ heroku create --buildpack git://github.com/heroku/heroku-buildpack-python.git
+    $ heroku create --buildpack git://github.com/robograder/heroku-buildpack-python-dada.git
 
     $ git push heroku master
     ...
