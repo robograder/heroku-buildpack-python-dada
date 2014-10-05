@@ -3,7 +3,7 @@ Heroku buildpack: Python (+ Dada)
 
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps, powered by [pip](http://www.pip-installer.org/).
 
-This fork of it adds an additional step that will install [dada](git@github.com:robograder/dada.git)
+This fork of it adds an additional step that will install [dada](http://github.com/robograder/dada.git)
 
 Usage
 -----
