@@ -6,5 +6,8 @@ echo "DADA" | indent
 
 DADA_URL=https://github.com/robograder/dada
 
-git clone $DADA_URL .heroku/dada_build | indent
-make -C .heroku/dada_build pb | indent
+git clone $DADA_URL .heroku/dada | indent
+make -C .heroku/dada pb dada 2>&1 | indent
+
+# TODO fix to a particular revision?
+# TODO ensure that jinja is installed... or at least in the requirements.txt file...

@@ -179,7 +179,7 @@ source $BIN_DIR/steps/dada
 #
 
 # Set context environment variables.
-set-env PATH '$HOME/.heroku/python/bin:$PATH'
+set-env PATH '$HOME/.heroku/python/bin:$HOME/.heroku/dada/bin:$PATH'
 set-env PYTHONUNBUFFERED true
 set-env PYTHONHOME /app/.heroku/python
 set-env LIBRARY_PATH /app/.heroku/vendor/lib:/app/.heroku/python/lib
