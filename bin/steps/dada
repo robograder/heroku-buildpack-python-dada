@@ -1,3 +1,10 @@
+#!/usr/bin/env bash
+
 puts-step "Installing dada"
 
 echo "DADA" | indent
+
+DADA_URL=https://github.com/robograder/dada
+
+git clone $DADA_URL .heroku/dada_build | indent
+make -C .heroku/dada_build pb | indent
